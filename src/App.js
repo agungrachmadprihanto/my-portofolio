@@ -14,11 +14,49 @@ function App() {
         { name: "JS", bg: "bg-yellow-100", text: "text-yellow-600" },
         { name: "Laravel", bg: "bg-red-100", text: "text-red-600" }
       ], 
+      img: "/porto/image1.png" 
+    },
+    { 
+      id: 2, 
+      title: "Project 1", 
+      // Tech dibuat menjadi array of objects agar warnanya bisa berbeda
+      tech: [
+        { name: "JS", bg: "bg-yellow-100", text: "text-yellow-600" },
+        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" }
+      ], 
+      img: "/porto/image2.png" 
+    },
+    { 
+      id: 3, 
+      title: "Project 1", 
+      // Tech dibuat menjadi array of objects agar warnanya bisa berbeda
+      tech: [
+        { name: "JS", bg: "bg-yellow-100", text: "text-yellow-600" },
+        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" }
+      ], 
       img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" 
     },
-    // { id: 2, title: "Project 2", tech: "Laravel", color: "bg-blue-100 text-blue-600", img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&q=80" },
-    // { id: 3, title: "Project 3", tech: "TS", color: "bg-blue-50 text-blue-500", img: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&q=80" },
-    // { id: 4, title: "Project 4", tech: "RE", color: "bg-cyan-100 text-cyan-600", img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&q=80" },
+    { 
+      id: 4, 
+      title: "Project 1", 
+      // Tech dibuat menjadi array of objects agar warnanya bisa berbeda
+      tech: [
+        { name: "JS", bg: "bg-yellow-100", text: "text-yellow-600" },
+        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" }
+      ], 
+      img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" 
+    },
+    { 
+      id: 5, 
+      title: "Project 1", 
+      // Tech dibuat menjadi array of objects agar warnanya bisa berbeda
+      tech: [
+        { name: "JS", bg: "bg-yellow-100", text: "text-yellow-600" },
+        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" }
+      ], 
+      img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" 
+    },
+ 
   ];
 
 return (
@@ -68,7 +106,7 @@ return (
             <div className="flex gap-6 text-gray-400">
               {/* Icon GitHub */}
               <a 
-                href="https://github.com/username-anda" 
+                href="https://github.com/agungrachmadprihanto" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-gray-900 transition-colors"
@@ -85,7 +123,7 @@ return (
 
               {/* Icon LinkedIn */}
               <a 
-                href="https://linkedin.com/in/username-anda" 
+                href="https://linkedin.com/in/agung-rachmad-prihanto" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-blue-600 transition-colors"
