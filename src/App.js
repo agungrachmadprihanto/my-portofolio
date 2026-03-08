@@ -8,53 +8,79 @@ function App() {
     const projects = [
     { 
       id: 1, 
-      title: "Project 1", 
+      title: "MAA Digi", 
       // Tech dibuat menjadi array of objects agar warnanya bisa berbeda
       tech: [
         { name: "JS", bg: "bg-yellow-100", text: "text-yellow-600" },
-        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" }
+        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" },
+        { name: "Bootstrap", bg: "bg-blue-100", text: "text-blue-600" },
+        { name: "Nginx", bg: "bg-green-100", text: "text-green-600" }
       ], 
-      img: "/porto/image1.png" 
+      img: "/porto/image5.png", 
+      desc: "Internet banking makes it easier for customers to make online transactions securely and fast."
     },
     { 
       id: 2, 
-      title: "Project 1", 
+      title: "KPI Penilaian", 
       // Tech dibuat menjadi array of objects agar warnanya bisa berbeda
       tech: [
         { name: "JS", bg: "bg-yellow-100", text: "text-yellow-600" },
-        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" }
+        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" },
+        { name: "Vue JS", bg: "bg-blue-100", text: "text-blue-600" },
+        { name: "Nginx", bg: "bg-green-100", text: "text-green-600" }
       ], 
-      img: "/porto/image2.png" 
+      img: "/porto/image2.png",
+      desc: "employee assessment to determine performance every quarter and produce reports for HRD and management." 
     },
     { 
       id: 3, 
-      title: "Project 1", 
+      title: "Asset Lelang", 
       // Tech dibuat menjadi array of objects agar warnanya bisa berbeda
       tech: [
         { name: "JS", bg: "bg-yellow-100", text: "text-yellow-600" },
-        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" }
+        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" },
+        { name: "Nginx", bg: "bg-green-100", text: "text-green-600" }
       ], 
-      img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" 
+      img: "/porto/image3.png",
+      desc: "The auction asset catalog provides information about the products to be auctioned." 
     },
     { 
       id: 4, 
-      title: "Project 1", 
+      title: "Website Perusahaan", 
       // Tech dibuat menjadi array of objects agar warnanya bisa berbeda
       tech: [
-        { name: "JS", bg: "bg-yellow-100", text: "text-yellow-600" },
-        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" }
+        { name: "Wordpress", bg: "bg-yellow-100", text: "text-yellow-600" },
+        { name: "Elementor", bg: "bg-red-100", text: "text-red-600" },
+        { name: "PHP", bg: "bg-blue-100", text: "text-blue-600" },
       ], 
-      img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" 
+      img: "/porto/image4.png",
+      desc: "provide information about company products and the benefits provided to customers." 
     },
     { 
       id: 5, 
-      title: "Project 1", 
+      title: "Ijin Online", 
       // Tech dibuat menjadi array of objects agar warnanya bisa berbeda
       tech: [
         { name: "JS", bg: "bg-yellow-100", text: "text-yellow-600" },
-        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" }
+        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" },
+        { name: "Bootstrap", bg: "bg-blue-100", text: "text-blue-600" },
+        { name: "Nginx", bg: "bg-green-100", text: "text-green-600" }
       ], 
-      img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" 
+      img: "/porto/image1.png",
+      desc: "make it easier for employees to apply for permission and summarize the results for HRD." 
+    },
+    { 
+      id: 6, 
+      title: "Pengajuan Kredit", 
+      // Tech dibuat menjadi array of objects agar warnanya bisa berbeda
+      tech: [
+        { name: "JS", bg: "bg-yellow-100", text: "text-yellow-600" },
+        { name: "Laravel", bg: "bg-red-100", text: "text-red-600" },
+        { name: "Bootstrap", bg: "bg-blue-100", text: "text-blue-600" },
+        { name: "Nginx", bg: "bg-green-100", text: "text-green-600" }
+      ], 
+      img: "/porto/image6.png",
+      desc: "a summary list of credit applications from customers who will apply for credit to make it easier to follow up." 
     },
  
   ];
@@ -200,7 +226,7 @@ return (
                   </div>
                   <h3 className="text-lg font-bold group-hover:text-teal-600 transition-colors">{project.title}</h3>
                   <p className="mt-2 text-sm text-gray-500 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Repellendus qui dicta nemo sit.
+                    {project.desc}
                   </p>
                 </div>
               </div>
