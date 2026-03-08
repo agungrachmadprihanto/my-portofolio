@@ -181,9 +181,7 @@ return (
         <section id="about" className="mb-32 pt-20 border-t border-gray-100">
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
           <p className="text-gray-600 max-w-3xl leading-loose">
-            Passionate about building digital products that solve real-world problems. 
-            I believe that great software is built with clean code and a deep understanding of the user's needs. 
-            When I'm not coding, you'll find me looking at the stars or experimenting with new frameworks.
+            A Full-Stack Developer with 5 years of experience in the banking industry, specializing in the Laravel framework. He possesses comprehensive technical expertise in managing server configurations in SIT, UAT, and Production environments. He is skilled in maintaining system stability through in-depth log monitoring and analysis using the ELK Stack and server log management. He is accustomed to working with the high compliance standards and technical risk management typical of the financial sector.
           </p>
         </section>
 
@@ -241,8 +239,8 @@ return (
         <section id="contact" className="pt-20 border-t border-gray-100 mb-32">
           <h2 className="text-3xl font-bold mb-6">Let's Connect</h2>
           <p className="text-gray-600 mb-6">Feel free to reach out for collaborations or just a friendly hello!</p>
-          <a href="mailto:your@email.com" className="inline-block bg-gray-900 text-white px-8 py-3 rounded-full font-medium hover:bg-teal-600 transition-colors">
-            Say Hello
+          <a href="mailto:agungrachmadprihanto@gmail.com" className="inline-block bg-gray-900 text-white px-8 py-3 rounded-full font-medium hover:bg-teal-600 transition-colors">
+            <i>Email Me</i>
           </a>
         </section>
 
