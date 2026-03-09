@@ -85,6 +85,19 @@ function App() {
  
   ];
 
+
+  const handleScroll = (e, targetId) => {
+    e.preventDefault(); // Mencegah perilaku bawaan tag <a> yang menambahkan # ke URL
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' // Menyesuaikan agar elemen berada di atas layar
+      });
+    }
+  };
+
 return (
     // Tambahkan scroll-smooth di div utama agar transisi perpindahan section halus
     <div className="min-h-screen bg-white font-sans text-gray-900 selection:bg-teal-100 scroll-smooth">
@@ -109,10 +122,51 @@ return (
         {/* Navigation Bar - Fixed atau Sticky agar selalu terlihat saat di-scroll */}
         <nav className="flex justify-center sticky top-5 z-50 mb-16 md:mb-24">
           <ul className="flex items-center gap-4 sm:gap-8 bg-white/80 backdrop-blur-md shadow-lg px-6 sm:px-8 py-2.5 rounded-full text-sm font-medium ring-1 ring-gray-100 overflow-x-auto">
-            <li><a href="#home" className="text-gray-700 hover:text-teal-500 transition-colors">Home</a></li>
-            <li><a href="#about" className="text-gray-700 hover:text-teal-500 transition-colors">About</a></li>
-            <li><a href="#projects" className="text-gray-700 hover:text-teal-500 transition-colors">Projects</a></li>
-            <li><a href="#contact" className="text-gray-700 hover:text-teal-500 transition-colors">Contact</a></li>
+            <li>
+              <a 
+                href="#home" 
+                onClick={(e) => handleScroll(e, 'home')} 
+                className="text-gray-700 hover:text-teal-500 transition-colors cursor-pointer"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#about" 
+                onClick={(e) => handleScroll(e, 'about')} 
+                className="text-gray-700 hover:text-teal-500 transition-colors cursor-pointer"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#projects" 
+                onClick={(e) => handleScroll(e, 'projects')} 
+                className="text-gray-700 hover:text-teal-500 transition-colors cursor-pointer"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#articles" 
+                onClick={(e) => handleScroll(e, 'articles')} 
+                className="text-gray-700 hover:text-teal-500 transition-colors cursor-pointer"
+              >
+                Articles
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#contact" 
+                onClick={(e) => handleScroll(e, 'contact')} 
+                className="text-gray-700 hover:text-teal-500 transition-colors cursor-pointer"
+              >
+                Contact
+              </a>
+            </li>
           </ul>
         </nav>
 
@@ -169,7 +223,8 @@ return (
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-sm lg:max-w-md rotate-3 hover:rotate-0 transition-all duration-500">
               <img 
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop"
+                // src="oke.png"
                 alt="Profile" 
                 className="rounded-3xl shadow-2xl w-full h-[400px] object-cover grayscale"
               />
