@@ -151,15 +151,6 @@ return (
             </li>
             <li>
               <a 
-                href="#articles" 
-                onClick={(e) => handleScroll(e, 'articles')} 
-                className="text-gray-700 hover:text-teal-500 transition-colors cursor-pointer"
-              >
-                Articles
-              </a>
-            </li>
-            <li>
-              <a 
                 href="#contact" 
                 onClick={(e) => handleScroll(e, 'contact')} 
                 className="text-gray-700 hover:text-teal-500 transition-colors cursor-pointer"
